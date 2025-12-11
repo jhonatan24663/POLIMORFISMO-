@@ -1,0 +1,25 @@
+class EmpleadoPorHora:
+    def __init__(self, horas, valorHora):
+        self.horas = horas
+        self.valorHora = valorHora
+    
+    def calcularSalario(self):
+        return self.horas * self.valorHora
+
+class EmpleadoFijo:
+    def __init__(self, sueldo):
+        self.sueldo = sueldo
+    
+    def calcularSalario(self):
+        return self.sueldo
+
+
+empleados = [
+    EmpleadoPorHora(40, 1200),
+    EmpleadoFijo(250000),
+    EmpleadoPorHora(20, 1500)
+]
+
+for emp in empleados:
+    print("Salario:", emp.calcularSalario())
+ 
