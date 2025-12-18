@@ -2,7 +2,7 @@ class EmpleadoPorHora:
     def __init__(self, horas, valorHora):
         self.horas = horas
         self.valorHora = valorHora
-    
+
     def calcularSalario(self):
         return self.horas * self.valorHora
 
